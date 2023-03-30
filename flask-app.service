@@ -1,0 +1,11 @@
+[Unit]
+Description=Flask app service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ekamolov/lesson24_home_work
+ExecStart=/home/ekamolov/lesson24_home_work/venv/bin/python run.py
+
+[Install]
+WantedBy=multi-user.target
+
