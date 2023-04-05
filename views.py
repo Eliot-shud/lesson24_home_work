@@ -34,4 +34,4 @@ def perform_query() -> Union[Response, Tuple[Response, int]]:
 
 @main_bp.route('/ping', methods=['GET'])
 def ping():
-    return 'ping pong'
+    return 'pong'
